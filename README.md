@@ -7,7 +7,7 @@ For all those screen and ssh agent forwarding problems.
 To build on Linux
  $ gcc -Wall -shared -fPIC -ldl -o ssh-authsock-hack.so ssh-authsock-hack.c
 To build on FreeBSD
- $ gcc -Wall -shared -fPIC -ldl -o ssh-authsock-hack.so ssh-authsock-hack.c
+ $ gcc -Wall -shared -fPIC -o ssh-authsock-hack.so ssh-authsock-hack.c
 
 Set LD_PRELOAD while shell initialization
 

@@ -1,19 +1,6 @@
 /*
 * LD_PRELOAD Hack to try and make latest ssh-agent auth socket
 * always available. Works on Linux/FreeBSD
-*
-* To build on Linux
-*  $ gcc -Wall -shared -fPIC -ldl -o ssh-authsock-hack.so ssh-authsock-hack.c
-* Tom build on FreeBSD
-*  $ gcc -Wall -shared -fPIC -ldl -o ssh-authsock-hack.so ssh-authsock-hack.c
-*
-* Set LD_PRELOAD while your shell initialization
-*
-* For ex. bash
-*
-* if [ -e "/path/to/ssh-authsock-hack.so"]; then
-* export LD_PRELOAD="/path/to/ssh-authsock-hack.so":$LD_PRELOAD
-* fi
 */
 
 #define _GNU_SOURCE
