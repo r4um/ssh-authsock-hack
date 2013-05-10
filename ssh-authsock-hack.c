@@ -90,7 +90,6 @@ char *getenv(const char *name)
        new_sock = latest_ssh_auth_sock();
 
        if(new_sock != NULL) {
-           /*printf("ssh-agent-hack.so: returning %s for SSH_AUTH_SOCK\n", new_sock);*/
            return new_sock;
        }
    }

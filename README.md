@@ -3,13 +3,9 @@
 LD_PRELOAD Hack to try and make latest ssh-agent auth socket always available.
 For all those screen and ssh agent forwarding problems.
 
-To build on Linux
-    
-    $ gcc -Wall -shared -fPIC -ldl -o ssh-authsock-hack.so ssh-authsock-hack.c
+To build
 
-To build on FreeBSD
-
-    $ gcc -Wall -shared -fPIC -o ssh-authsock-hack.so ssh-authsock-hack.c
+    $ make
 
 Set LD_PRELOAD while shell initialization
 
